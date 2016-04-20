@@ -20,7 +20,7 @@
 
 <code>sockethelper = SocketHelper("localhost",1333)</code>
 
-<p><code>while True:</code></p>
+<code>while True:</code>
 	<p><code>sockethelper.s_appept()</code></p>
 	<code>print sockethelper.read_data()</code>
 	<code>sockethelper.send_data("nice to meet you")</code>
