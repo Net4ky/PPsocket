@@ -3,29 +3,25 @@
 # Examples
 
 ####php client
-<code>
-<?php
-require_once('../shelper.php');
+<code><?php</code>
+<code>require_once('../shelper.php');</code>
 
-$sockethelper = new sockethelper('localhost',1333);
+<code>$sockethelper = new sockethelper('localhost',1333);</code>
 
-$sockethelper->send_data('Hello World');
+<code>$sockethelper->send_data('Hello World');</code>
 
-echo $sockethelper->read_data();
+<code>echo $sockethelper->read_data();</code>
 
-$sockethelper->close_socket();
-</code>
+<code>$sockethelper->close_socket();</code>
 	
 ####python server
 
-<code>
-from shelper import SocketHelper
+<code>from shelper import SocketHelper</code>
 
-sockethelper = SocketHelper("localhost",1333)
+<code>sockethelper = SocketHelper("localhost",1333)</code>
 
-while True:
-	sockethelper.s_appept()
-	print sockethelper.read_data()
-	sockethelper.send_data("nice to meet you")
-	sockethelper.close_socket
-</code>
+<code>while True:</code>
+	<code>sockethelper.s_appept()</code>
+	<code>print sockethelper.read_data()</code>
+	<code>sockethelper.send_data("nice to meet you")</code>
+	<code>sockethelper.close_socket</code>
